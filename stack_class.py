@@ -1,16 +1,17 @@
 #Stack implementation using list
 class Stack:
-    stk = []
+    def __init__(self):
+        self.stack=[]
 
-    def push(self,x):
-        self.stk.append(x)
+    def push(self,item):
+        self.stack.append(item)
 
     def pop(self):
-        return self.stk.pop()
+        return self.stack.pop()
 
 #print stack 
-def print_stack(stack):
-    for item in stack.stk:
+def print_stack(list_stack):
+    for item in list_stack.stack:
         print(f'Item: {item}')    
 
 def main():
