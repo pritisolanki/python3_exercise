@@ -18,3 +18,7 @@ sample_text='Lorem Ipsum is simply dummy text of the printing and typesetting in
 #Show first 25 chracters
 print(f'{sample_text[0:25]}')
 #Lorem Ipsum is simply dum
+
+str1 = 'Lorem'
+print (str1[:9])
+#Lorem - 
