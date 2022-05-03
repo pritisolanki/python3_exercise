@@ -1,9 +1,5 @@
 # Lambda function exercise
-
-from audioop import reverse
-from numpy import sort
-
-#create a lambda function that sorts the list in descending order
+#create a lambda function that sorts the list in descending order - Priti
 #case 1
 lst = [23, 45, 56, 78, 99, 35]
 reverse_list = lambda lst: sorted(lst, reverse=True)
@@ -13,10 +9,24 @@ print(reverse_list(lst))
 lst = sorted(lst, key=lambda x: x, reverse=True)
 print(lst)
 
-#what is the pythonic way of writing lambda function case 1 OR case 2?
-
 #perform list join using lambda
 my_list = ['lorem', 'porem','sorem']
 joinner = ' '.join(map(lambda x: x, my_list))
 print(joinner)
 
+#lambda function to add 15
+add15_func = lambda x : x+15
+print(add15_func(10))
+
+subject_mark = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
+subject_mark.sort(key =lambda x: x[1])
+print(subject_mark)
+
+cars = [{'make': 'Nokia', 'model': 216, 'color': 'Black'}, {'make': 'Mi Max', 'model': '2', 'color': 'Gold'}, {'make': 'Samsung', 'model': 7, 'color': 'Blue'}]
+cars.sort(key=lambda x : int(x['model']))
+print(cars)
+
+lst=["otter", "whale", "goose", "chipmunk", "fox", "sheep", "rabbit", "marten"]
+#Using sorted() function and lambda sort the words in the list based on their second letter from a to z.
+lst=sorted(lst,key=lambda x : x[1])
+print(lst)
