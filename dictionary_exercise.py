@@ -1,5 +1,4 @@
 #Dictionary Exercise - Practiced by Priti
-
 #convert two list in to dictionary
 list1 = range(1,6)
 list2 = ['pink','red','yellow','orange','blue']
@@ -28,7 +27,6 @@ if 'a' in sample_dict.keys():
 #dictionary view operators
 fruit_dict = {'apple':'green','banana':'yellow','orange':'orange'}
 unkown_fruit_dict = {'bel':'green','ber':'yellow','orange':'black','mystic':'yellow'}
-flower_dict = {'rose':'red','sunflower':'yellow','marigold':'yellow','jasmine':'white','lily':'pink'}
 
 dict_1 = fruit_dict.keys()  & unkown_fruit_dict.keys()
 print(f'intersection: {dict_1}')
@@ -41,3 +39,11 @@ print(f'difference: {dict_3}')
 
 dict_4 = fruit_dict.keys()  | unkown_fruit_dict.keys()
 print(f'union {dict_4}')
+
+
+print(f'remove fruit: { unkown_fruit_dict.pop("ber") }')
+
+#Find all yellow flowers : Using dictionary comprehension
+flower_dict = {'rose':'red','sunflower':'yellow','marigold':'yellow','jasmine':'white','lily':'pink'}
+yellow_flower= { x for x in flower_dict.items() if "yellow" in x }
+print(dict(yellow_flower))
