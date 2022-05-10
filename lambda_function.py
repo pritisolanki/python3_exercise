@@ -25,13 +25,13 @@ subject_mark = [('English', 88), ('Science', 90), ('Maths', 97), ('Social scienc
 subject_mark.sort(key =lambda x: x[1])
 print(subject_mark)
 
-#sort cars based on model
+#sort cars based on model - Practiced by Priti
 cars = [{'make': 'Nokia', 'model': 216, 'color': 'Black'}, {'make': 'Mi Max', 'model': '2', 'color': 'Gold'}, {'make': 'Samsung', 'model': 7, 'color': 'Blue'}]
 cars.sort(key=lambda x : int(x['model']))
 print(cars)
 
-lst=["otter", "whale", "goose", "chipmunk", "fox", "sheep", "rabbit", "marten"]
 #Using sorted() function and lambda sort the words in the list based on their second letter from a to z.
+lst=["otter", "whale", "goose", "chipmunk", "fox", "sheep", "rabbit", "marten"]
 lst=sorted(lst,key=lambda x : x[1])
 print(lst)
 
