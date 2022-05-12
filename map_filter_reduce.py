@@ -1,4 +1,5 @@
 #map function
+
 #title case the names
 names = ['alfred', 'tabitha', 'william', 'arla']
 names_corrected_case = map(lambda x: x.title(), names)
@@ -20,7 +21,7 @@ else:
 lst1=["Alaska", "Alabama", "Arizona", "Arkansas", "Colorado", "Montana", "Nevada"]
 print(list(map(lambda x: x.count('a') ,lst1)))
 
-#simple use cas to filter items
+#simple use cas to filter items - By Priti
 scores =[20,30,40,10,5,4]
 print(list(filter(lambda score: score > 20,scores)))
 
@@ -37,7 +38,6 @@ countries = [
     ['Russia', 141722205],
     ['Mexico', 128649565]
 ]
-
 print(list(filter(lambda country: country[1]>300000000,countries)))
 
 aquarium_creatures = [
