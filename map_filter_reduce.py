@@ -39,3 +39,20 @@ countries = [
 ]
 
 print(list(filter(lambda country: country[1]>300000000,countries)))
+
+aquarium_creatures = [
+  {"name": "sammy", "species": "shark", "tank number": "11", "type": "fish"},
+  {"name": "ashley", "species": "crab", "tank number": "25", "type": "shellfish"},
+  {"name": "jo", "species": "guppy", "tank number": "18", "type": "fish"},
+  {"name": "jackie", "species": "lobster", "tank number": "21", "type": "shellfish"},
+  {"name": "charlie", "species": "clownfish", "tank number": "12", "type": "fish"},
+  {"name": "olly", "species": "green turtle", "tank number": "34", "type": "turtle"}
+]
+#search all crab species
+filter_result = filter(lambda ele : ele['species'] is 'crab' ,map(lambda x: x , aquarium_creatures))
+print(list(filter_result))
+#filter based on key and value
+aquarium_species = filter(lambda ele,search_key='species', search_val='crab': ele[search_key] is search_val ,map(lambda x: x , aquarium_creatures))
+aquarium_type = filter(lambda ele,search_key='type', search_val='fish': ele[search_key] is search_val ,map(lambda x: x , aquarium_creatures))
+
+
