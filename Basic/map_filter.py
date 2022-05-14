@@ -56,3 +56,5 @@ aquarium_species = filter(lambda ele,search_key='species', search_val='crab': el
 aquarium_type = filter(lambda ele,search_key='type', search_val='fish': ele[search_key] is search_val ,map(lambda x: x , aquarium_creatures))
 
 
+#import JSONPath as jp
+#jp("$[*][species]").parse(aquarium_creatures)
