@@ -21,14 +21,14 @@ employee_eating_preferences = {
     "doe": {'lunch':False,'snack':True,'tea':True},
     "koe": {'lunch':False,'snack':False,'tea':False}
 }
-#with conditionals
+#with conditionals - Use Case 1
 for k,x in employee_eating_preferences.items():
     if x['lunch'] is True or x['snack'] is True or x['tea'] is True:
         print(f'Order Meal for {k}') 
     else:
         print(f'{k} opt out for meal') 
 
-#with any()
+#with any() - Use Case 2
 for k,v in employee_eating_preferences.items():
     if any(v.values()):
         print(f'Order Meal for {k}') 
