@@ -15,7 +15,7 @@ zone_chargingstation ={
 # One way is iterating over iterable with for loop other way is use any()
 print(any(zone_chargingstation.values()))
 
-#how any() help in managing multiple conditions - By Priti
+#How any() help in managing multiple conditions - By Priti
 employee_eating_preferences = {
     "jon": {'lunch':True,'snack':True,'tea':True},
     "doe": {'lunch':False,'snack':True,'tea':True},
