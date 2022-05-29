@@ -38,3 +38,7 @@ print(pirate_400sack)
 #Suppose that the average market value of a sack of grain is $42. Use a single list comprehension to create a list of the market values of each pirate's grain.
 pirate_marketval = [ [pirate[0] ,pirate[1]*42] for pirate in prairie_pirates ]
 print(pirate_marketval)
+
+#nested
+result=[(num1,num2) for num1 in range(1, 3) for num2 in range(1, 4)]
+print(result)
