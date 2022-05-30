@@ -1,5 +1,5 @@
 import arrow
-import datetime
+from datetime import datetime
 #format
 print(f'current time in PST: { arrow.now("US/Pacific").format("MMMM DD, YYYY HH:mm A")}');
 print(f'current time in EST: { arrow.now("America/New_York").format("MMMM DD, YYYY HH:mm A")}');
