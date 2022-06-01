@@ -27,3 +27,8 @@ print(arr_1d[:-1]) #reverse slicing
 #print all of the values in the array that are less than 5.
 print(num_array[num_array<5])  
 
+#second largest value 
+print(num_array.max())
+maxval = num_array.max()
+x = np.unique(num_array)[-2]
+print(x)

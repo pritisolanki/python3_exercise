@@ -9,7 +9,7 @@ apple_price = np.array([
 print(apple_price.min(axis=0))
 print(apple_price.min(axis=1))
 
-#find unique states which are selling apples - By Priti
+#find unique states which are selling apples 
 locations = {1:'New Jersey',2:'Boston',3:'New York',4:'Virginia',5:'Florida'}
 
 apple_selling_states = np.array([[1,2,5],[2,3,5],[1,2,5],[1,3,2],[1,3,1],[2,1,1],[2,3,3],[3,1,1]])
