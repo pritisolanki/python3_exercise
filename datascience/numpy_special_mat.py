@@ -14,6 +14,7 @@ print(np.diag([2,2,2]))
  [0 0 2]]
 '''
 
+#How to interpret shape output - By Priti
 num_arr = np.array([1,2,3])
 print(num_arr.shape)
 #output: (3,) : num_array has one dimension and it has 3 elemnents
