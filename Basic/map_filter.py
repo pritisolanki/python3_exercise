@@ -59,7 +59,7 @@ aquarium_species = filter(
     map(lambda x: x, aquarium_creatures),
 )
 aquarium_type = filter(
-    lambda ele, search_key="type", search_val="fish": ele[search_key] == search_val,
+    lambda ele, search_key="type", search_val="fish": ele[search_key] is search_val,
     map(lambda x: x, aquarium_creatures),
 )
 
