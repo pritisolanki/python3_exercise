@@ -15,3 +15,7 @@ print(list_item)
 # Solution : Use slicing
 reversed_list = list_item[len(list_item) - 1 :: -1]
 print(reversed_list)
+
+# get the index of an item in the list
+list_arr = [3, 4, 5, 1, 2]
+print(list_arr.index(1))
