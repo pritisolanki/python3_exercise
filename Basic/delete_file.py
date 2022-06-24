@@ -14,7 +14,7 @@ except BaseException as err:
     print(format(err))
     raise
 
-# shutil.rmtree() deletes a directory and all its contents.
+# shutil.rmtree() deletes a directory and all its contents. - By Priti
 try:
     shutil.rmtree("test")
 except FileNotFoundError as notfounderr:
