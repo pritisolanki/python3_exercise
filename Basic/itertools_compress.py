@@ -6,3 +6,6 @@ have_symptoms = [False, True, True]
 
 traveller_have_symptoms = compress(traveller, have_symptoms)
 print(list(traveller_have_symptoms))
+
+new_s = zip(traveller, have_symptoms)
+print(list(new_s))
