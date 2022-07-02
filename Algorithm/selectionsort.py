@@ -7,12 +7,16 @@ Best complexity: n^2
 Space complexity: 1
 """
 
-num_arr = [3, 1, 21, 45, 2, 6]
-for i in range(len(num_arr) - 1):
-    min_index = i
-    for j in range(i + 1, len(num_arr) - 1):
-        if num_arr[j] < num_arr[min_index]:
-            min_index = j
-    num_arr[i], num_arr[min_index] = num_arr[min_index], num_arr[i]
 
-print(num_arr)
+def selectionsort(num_list):
+    for i in range(len(num_list) - 1):
+        min_index = i
+        for j in range(i + 1, len(num_list) - 1):
+            if num_list[j] < num_list[min_index]:
+                min_index = j
+        num_list[i], num_list[min_index] = num_list[min_index], num_list[i]
+
+
+num_list = [2, 3, 4, 1, 9, 10, 5, 18]
+result = selectionsort(num_list)
+print(num_list)
