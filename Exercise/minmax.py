@@ -5,15 +5,11 @@ import os
 import random
 import re
 import sys
-
-#
-# Complete the 'miniMaxSum' function below.
-#
-# The function accepts INTEGER_ARRAY arr as parameter.
-#
+import unittest
+from unittest import TestCase
 
 
-def miniMaxSum(arr):
+def minmaxsum(arr):
     sum_arr = []
     lenarr = len(arr)
     i = 0
@@ -22,10 +18,15 @@ def miniMaxSum(arr):
         sum_arr.append(str(sum(arr)))
         arr.append(item)
         i = i + 1
-
-    print(f"{min(sum_arr)} {max(sum_arr)}")
+    return min(sum_arr), max(sum_arr)
 
 
 if __name__ == "__main__":
-    arr = [1, 2, 3, 4, 5]
-    miniMaxSum(arr)
+    unittest.main()
+
+
+class TestMinmaxsum(TestCase):
+    def test_minmaxsum(self):
+        arr = [1, 2, 3, 4, 5]
+        print(arr)
+        self.assertEqual(minmaxsum(arr), ("10", "14"))
