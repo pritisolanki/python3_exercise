@@ -9,11 +9,12 @@ def today_quote():
 
 
 @beautify_output_withlen
+@addtimer
 def today_motivation(q):
     print(q)
 
 
-q = "One day!"
+q = "Better than a thousand hollow words, is one word that brings peace.!"
 today_motivation(q)
 
 

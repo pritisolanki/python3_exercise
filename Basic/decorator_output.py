@@ -24,6 +24,6 @@ def addtimer(func):
         tic = time.perf_counter()
         func(*args, **kwargs)
         toc = time.perf_counter()
-        print(f"Function took  {toc - tic:0.4f} seconds")
+        print(f"Function {func.__name__}() took  {toc - tic:0.4f} seconds")
 
     return wrapper_addtimer
