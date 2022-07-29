@@ -1,7 +1,9 @@
 import time
+from functools import wraps
 
 
 def beautify_output(func):
+    @wraps(func)
     def wrapper_output():
         print("-----------------------------")
         func()
@@ -11,6 +13,7 @@ def beautify_output(func):
 
 
 def beautify_output_withlen(func):
+    @wraps(func)
     def wrapper_output(*args, **kwargs):
         print("-" * len(args[0]))
         func(*args, **kwargs)
@@ -20,6 +23,7 @@ def beautify_output_withlen(func):
 
 
 def addtimer(func):
+    @wraps(func)
     def wrapper_addtimer(*args, **kwargs):
         tic = time.perf_counter()
         func(*args, **kwargs)

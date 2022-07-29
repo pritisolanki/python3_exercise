@@ -8,14 +8,23 @@ def today_quote():
     print("It's a beautiful sunny day")
 
 
+@beautify_output
+def today_flowerquote():
+    print("Bee like flower")
+
+
 @beautify_output_withlen
-@addtimer
 def today_motivation(q):
     print(q)
 
 
 q = "Better than a thousand hollow words, is one word that brings peace.!"
+today_quote()
+print(today_quote.__name__)
+today_flowerquote()
+print(today_flowerquote.__name__)
 today_motivation(q)
+print(today_motivation.__name__)
 
 
 @addtimer
