@@ -18,4 +18,4 @@ with open("dog_breed_reversed", "w") as writer:
         writer.write(breed)
 
 # read json file
-print(json.load(open("sample.json")))
+print(json.load(open("sample_file.json")))
